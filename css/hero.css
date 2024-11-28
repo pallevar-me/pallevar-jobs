@@ -1,0 +1,149 @@
+/* Estilos para la sección principal */
+.hero {
+    padding: 60px 20px;
+/*    background: linear-gradient(135deg, #f8f9fa, #e9ecef);*/
+ /*   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);*/
+/*    border-radius: 8px; */
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Estilos para la fila */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilos para columnas en pantallas grandes */
+.col-md-6 {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+/* Estilos para el contenido de la sección */
+.hero-content h1 {
+    font-size: 40px;
+    color: #1c2434;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #5c5c5c;
+    margin-bottom: 30px;
+}
+
+/* Estilo para el grupo de botones */
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+/* Estilos generales para los botones */
+.btn {
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+p{
+    font-size: 20px;
+    letter-spacing: -.0012em;
+    line-height: 30px;
+}
+/* Estilo para el botón primario */
+.btn-primary {
+    background-color: #0176d3;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #032d60;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #0176d3;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #0176d3;
+}
+
+.btn-secondary:hover {
+    background-color: #eaf5fe;
+    transform: translateY(-2px);
+    border: 2px solid #032d60;
+    border-color: #032d60;
+    color: #032d60;
+}
+
+/* Estilo para la imagen */
+.hero-image {
+    width: 100%;
+    max-width: 540px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-6 {
+        max-width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .button-group {
+        flex-direction: column;  
+    /*    align-items: center; */
+        gap: 10px;
+        width: 100%;
+    }
+    .btn {
+        width: 50%; /* Ancho completo para cada botón */
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+/* Estilos para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    .hero {
+        padding: 30px 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

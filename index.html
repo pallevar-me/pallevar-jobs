@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pallevar - Pedidos en línea para restaurantes</title>
+    <meta name="description" content="Transforma tu restaurante con Pallevar: conecta con tus clientes y facilita pedidos en línea sencillos y eficientes.">
+  
+    <!-- Iconos -->
+    <link rel="icon" href="img/icono2.PNG" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icono2.PNG">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icono2.PNG">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icono2.PNG">
+    <link rel="manifest" href="img/icono2.PNG">
+    <meta name="theme-color" content="#1c2434">
+  
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Pallevar - Pedidos en línea para restaurantes">
+    <meta property="og:description" content="Conéctate con tus clientes, aumenta tus pedidos y mejora la experiencia de pedidos en línea.">
+    <meta property="og:image" content="img/icono2.PNG">
+    <meta property="og:url" content="https://pallevar.me">
+    <meta property="og:type" content="website">
+  
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pallevar - Pedidos en línea para restaurantes">
+    <meta name="twitter:description" content="Conecta con tus clientes y mejora la eficiencia en pedidos en línea.">
+    <meta name="twitter:image" content="img/icono2.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+
+            /*
+            font-family: "Archivo Black", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Archivo Black', sans-serif;
+            font-weight: normal; /* Puedes ajustarlo a tu preferencia */
+            font-style: normal;
+        }
+
+        /*hero section*/
+/* General Styling for the Hero Section */
+
+        /*hero section*/
+        .system-item img {
+            border-bottom: none !important;
+        }
+        .hero-image {
+            margin-top: 70px;
+        }
+        .sidebar {
+            transform: translateX(-100%);  
+            transition: transform 0.3s ease;  
+        }
+
+ 
+        .sidebar.active {
+            transform: translateX(0);  
+        }
+        .hero{
+            background-color: #f4f4f4;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/jobs.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <div class="globalnav-wrapper-c360">
+        <a class="screen-reader-text skip-to-content-c360" href="#main-content">
+            <div class="screen-reader-container">Saltarse al contenido</div>
+        </a>
+        
+        <nav class="c360-nav">
+            <div class="c360-nav__header">
+                <div class="burger-menu" id="burger-menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="logo">
+                    <img src="img/pallevar-logo-2.PNG" alt="Panel Administrativo">
+                </div>
+                <ul class="nav-links-1">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Acerca de</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#precios">Precios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li> 
+                        <button class="dropdown-button" id="login-dropdown">Iniciar sesión</button>
+                        <div class="dropdown">
+                            <a href="#login">Panel</a>
+                            <a href="#register">Comanda</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="dropdown2">
+                    <button class="dropdown-button2" id="dropdownButton2">Iniciar sesión</button>
+                    <div class="dropdown-content2" id="dropdownContent2">
+                        <a href="#login">Panel</a>
+                        <a href="#register">Comanda</a>
+                    </div>
+                </div>
+                <button class="dropdown-button2 trial">Empezar gratis</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Acerca de</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#precios">Precios</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <button class="dropdown-button">Empezar gratis</button>
+        </ul>
+    </div>
+
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Contenedor de texto -->
+                <div class="col-md-6 hero-content">
+                    <h1>Encuentra tu proximo trabajo en Pallevar!</h1>
+                    <p>La plaforma para pedidos en linea.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="section">
+        <div class="container">
+            <div class="header">
+                <h2>Engineering</h2>
+                <div class="badge">1 Openings</div>
+              </div>
+              <hr>
+              <ul class="job-list">
+                <li class="job-item">
+                    <a href="jobs/7678615001/">UX/UI Designer</a>
+                    <div class="location">Remote - Global</div>
+                  </li>
+                  <!--
+                <li class="job-item">
+                  <a href="#">Senior Software Engineer</a>
+                  <div class="location">Remote - US / Canada</div>
+                </li>
+                <li class="job-item">
+                  <a href="#">Software Engineer</a>
+                  <div class="location">Remote - Global</div>
+                </li>
+                <li class="job-item">
+                  <a href="#">Data Scientist</a>
+                  <div class="location">Remote - Global</div>
+                </li>
+                <li class="job-item">
+                  <a href="#">Front End Engineer</a>
+                  <div class="location">San Francisco, CA (HQ)</div>
+                </li>
+                <li class="job-item">
+                  <a href="#">Technical Director</a>
+                  <div class="location">San Francisco, CA (HQ)</div>
+                </li>
+              </ul>        
+              -->
+              <!--    
+            <div class="header">
+                <h2>Administration</h2>
+                <div class="badge">3 Openings</div>
+              </div>
+              <hr>
+              <ul class="job-list">
+
+                <li class="job-item">
+                  <a href="#">Senior Manager, Risk Management</a>
+                  <div class="location">Remote - US (San Francisco, CA)</div>
+                </li>
+                <li class="job-item">
+                  <a href="#">Operations Manager</a>
+                  <div class="location">San Francisco, CA (HQ)</div>
+                </li>
+                <li class="job-item">
+                  <a href="#">Administrative Assistant</a>
+                  <div class="location">Dallas, TX</div>
+                </li>
+              </ul>
+            
+                -->
+            
+              <div class="header">
+                <h2>Sales & Customer Success</h2>
+                <div class="badge">1 Openings</div>
+              </div>
+              <hr>
+              <ul class="job-list">
+                <li class="job-item">
+                    <a href="jobs/7678615002/">Sales Representative</a>
+                    <div class="location">Remote, Tijuana</div>
+                  </li>
+              </ul>
+
+              <div class="header">
+                <h2>Marketing</h2>
+                <div class="badge">1 Openings</div>
+              </div>
+              <hr>
+              <ul class="job-list">
+                <li class="job-item">
+                  <a href="jobs/7678615003/">Marketing Manager</a>
+                  <div class="location">Remote - Global</div>
+                </li>
+
+              </ul>
+              <!--
+              <h4>Work happier</h4>
+              <p class="description">Build amazing things with autonomy, self-direction, and a healthy work-life balance. We offer flexible work schedules for all of our employees and unlimited PTO. We also believe that if a job allows for it, you should work wherever you’re happiest.</p>
+            
+              <h4>Keep growing</h4>
+              <p class="description">Learn how you learn best. From books to conferences, you’ll get a yearly budget for your individual learning and development goals. If ebooks are more your style, you’ll get a brand new Kindle on your first day.</p>
+         
+              <hr>
+                -->
+              <p></p>
+              <div class="card">
+                <div class="card-body">
+                  <h2>Internships</h2>
+                  <p class="lead">
+                    ¿Estás actualmente matriculado en una universidad o colegio y buscas experiencia práctica mientras obtienes créditos académicos? 
+                    ¡Echa un vistazo a nuestras oportunidades de pasantías!
+                </p>
+                  <a href="#" class="btn">Explora Pasantias</a>
+                </div>
+              </div>
+             
+        </div>
+      </div>
+      
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Logo de la marca -->
+        <div class="footer-logo">
+            <img src="img/logo_blanco_fondo_transparente.png" alt="Logo de Pallevar" />
+        </div>
+
+        <!-- Columnas de contenido -->
+        <div class="footer-columns">
+            <!-- Columna de redes sociales -->
+            <div class="footer-column">
+                <h4>Síguenos</h4>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna de cumplimientos legales -->
+            <div class="footer-column">
+                <h4>Legales</h4>
+                <ul class="legal-links">
+                    <li><a href="#privacy">Política de Privacidad</a></li>
+                    <li><a href="#terms">Términos y Condiciones</a></li>
+                    <li><a href="#cookies">Política de Cookies</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna de otros links -->
+            <div class="footer-column">
+                <h4>Explora</h4>
+                <ul class="explore-links">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#features">Características</a></li>
+                    <li><a href="#pricing">Precios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página inferior -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Pallevar. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
+ 
+    </main>
+
+    <script src="js/app.js"></script>
+    <script>
+         
+        document.getElementById('login-dropdown').addEventListener('click', function() {
+            const dropdown = document.querySelector('.dropdown');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Cerrar el dropdown si se hace clic fuera de él
+        document.addEventListener('click', function(event) {
+            const dropdown = document.querySelector('.dropdown');
+            const button = document.getElementById('login-dropdown');
+            if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.style.display = 'none';
+            }
+        });
+
+        const dropdownButton = document.getElementById('dropdownButton2');
+        const dropdownContent = document.getElementById('dropdownContent2');
+
+        dropdownButton.addEventListener('click', () => {
+            dropdownContent.classList.toggle('show');
+        });
+
+        // Cierra el dropdown si se hace clic fuera de él
+        window.addEventListener('click', (event) => {
+            if (!event.target.matches('.dropdown-button2')) {
+                if (dropdownContent.classList.contains('show')) {
+                    dropdownContent.classList.remove('show');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
