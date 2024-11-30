@@ -1,1 +1,142 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="Únete a Pallevar como Software Engineering Manager para liderar equipos de ingeniería, impulsar el desarrollo de nuestra plataforma SaaS y transformar la industria de restaurantes.">
+        <meta name="keywords" content="Software Engineering Manager, trabajo remoto, ingeniería de software, plataforma SaaS, liderazgo, desarrollo ágil, Pallevar">
+        <meta name="author" content="Pallevar">
+        
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Software Engineering Manager - Pallevar Jobs">
+        <meta property="og:description" content="Forma parte del equipo de Pallevar liderando proyectos innovadores como Software Engineering Manager.">
+        <meta property="og:image" content="https://raw.githubusercontent.com/pallevar-me/pallevar-jobs/refs/heads/main/img/pallevar-logo-2.PNG">
+        <meta property="og:url" content="https://jobs.pallevar.me/">
+        <meta property="og:type" content="website">
+        
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:title" content="Software Engineering Manager - Pallevar Jobs">
+        <meta name="twitter:description" content="Únete al equipo de Pallevar liderando iniciativas tecnológicas como Software Engineering Manager.">
+        <meta name="twitter:image" content="https://raw.githubusercontent.com/pallevar-me/pallevar-jobs/refs/heads/main/img/pallevar-logo-2.PNG">
+        <meta name="twitter:card" content="summary_large_image">
+      
+        <title>Software Engineering Manager | Pallevar Jobs</title>
+      
+        <!-- Favicon -->
+        <link rel="icon" href="https://raw.githubusercontent.com/pallevar-me/pallevar-jobs/refs/heads/main/img/pallevar-logo-2.PNG" type="image/x-icon">
+      
+        <!-- External CSS Files -->
+        <link rel="stylesheet" href="../../css/navbar.css"> 
+        <link rel="stylesheet" href="../../css/modal.css"> 
+        <link rel="stylesheet" href="../../css/vacante.css">
+        <link rel="stylesheet" href="../../css/footer.css">
+      
+        <!-- Accessibility Meta Tags -->
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#1c2434">
+      
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="globalnav-wrapper-c360">
+        <a class="screen-reader-text skip-to-content-c360" href="#main-content">
+            <div class="screen-reader-container">Saltarse al contenido</div>
+        </a>
+        
+        <nav class="c360-nav">
+            <div class="c360-nav__header">
+                <div class="logo">
+                    <img src="../../img/pallevar-logo-2.PNG" alt="Panel Administrativo">
+                </div>
+                <ul class="nav-links-1">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Acerca de</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#precios">Precios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col sidebar2">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="../../">
+                            <span class="icon">&#8592;</span> Volver a Vacantes
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        Remoto - Global <span class="icon">&#127758;</span>
+                    </li>
+                    <li class="list-group-item">
+                        Tiempo Completo <span class="icon">&#128338;</span>
+                    </li>
+                    <li class="list-group-item">
+                        Departamento: Ingeniería <span class="icon">&#128187;</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col content">
+                <h1>Software Engineering Manager</h1>
+                <p class="lead">
+                    En <b>Pallevar</b>, buscamos un **Software Engineering Manager** para liderar nuestro equipo técnico y llevar nuestra plataforma SaaS al siguiente nivel. Este rol combina habilidades de liderazgo, conocimientos técnicos profundos y una pasión por la innovación.
+                </p>
+                
+                <h3>Responsabilidades</h3>
+                <ul class="project-list">
+                    <li>Planificar y liderar el desarrollo de nuevas funcionalidades para nuestra plataforma.</li>
+                    <li>Mentorar y gestionar al equipo de ingeniería, asegurando su crecimiento profesional.</li>
+                    <li>Implementar procesos de desarrollo ágil para maximizar la productividad.</li>
+                    <li>Colaborar con los departamentos de producto y diseño para garantizar una experiencia de usuario excepcional.</li>
+                    <li>Asegurar la calidad y escalabilidad del código, liderando revisiones técnicas.</li>
+                </ul>
+
+                <h3>Requisitos</h3>
+                <ul class="project-list">
+                    <li>Experiencia previa como líder técnico o manager en un equipo de desarrollo de software.</li>
+                    <li>Conocimientos avanzados en desarrollo backend (Node.js, bases de datos relacionales y no relacionales).</li>
+                    <li>Habilidades sólidas de comunicación y liderazgo.</li>
+                    <li>Experiencia implementando soluciones escalables en la nube (AWS, Azure o GCP).</li>
+                </ul>
+
+                <h5>Ofrecemos:</h5>
+                <ul class="project-list">
+                    <li>Trabajo remoto y horario flexible.</li>
+                    <li>Oportunidades de desarrollo profesional continuo.</li>
+                    <li>Impacto directo en un proyecto de alto crecimiento.</li>
+                    <li>Posibilidad de obtener participación accionaria en la empresa.</li>
+                </ul>
+
+                <button class="btn" id="apply-now-btn">Aplicar Ahora</button>
+                <div id="apply-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-btn" id="close-modal">&times;</span>
+                        <h2>Aplica para la vacante</h2>
+                        <form id="apply-form">
+                            <label for="first-name">Nombre:</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                            <label for="last-name">Apellido:</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            <button type="submit" class="btn">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
