@@ -7,11 +7,12 @@ const submitForm = async (event) => {
 
     try {
         const response = await axios.post('https://email.saldi.me/vacantes', formObject, {
+            mode: "cors",
             headers: {
                 'Content-Type': 'application/json',
             }
         });
-        
+
         // Verificar si la respuesta es exitosa
         if (response.status === 200) {
             console.log('Solicitud enviada:', response.data);
