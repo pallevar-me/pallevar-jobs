@@ -174,10 +174,10 @@
                         <h2>Aplica para la vacante</h2>
                         <form id="apply-form">
                             <label for="first-name">Nombre:</label>
-                            <input type="text" id="first-name" name="first-name" required placeholder="Ingresa tu nombre">
+                            <input type="text" id="firstName" name="firstName" required placeholder="Ingresa tu nombre">
                         
                             <label for="last-name">Apellido:</label>
-                            <input type="text" id="last-name" name="last-name" required placeholder="Ingresa tu apellido">
+                            <input type="text" id="lastName" name="lastName" required placeholder="Ingresa tu apellido">
                         
                             <label for="email">Email:</label>
                             <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
@@ -199,7 +199,7 @@
                             
                             <label for="resume">Adjuntar CV (opcional):</label>
                             <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx">
-
+                            <input type="hidden" id="jobTitle" name="jobTitle" value="UI/UX Designer Intern, Design System">
                             <button type="submit" class="btn">Enviar</button>
                         </form>
                     </div>
@@ -258,7 +258,6 @@
   
   <script src="../../js/app.js"></script>
   <script src="../../js/modal.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="../../js/apply.js"></script>
   <script>
          
