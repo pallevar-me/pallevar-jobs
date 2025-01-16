@@ -193,14 +193,25 @@
                             <label for="availability">Disponibilidad (en horas por semana):</label>
                             <input type="number" id="availability" name="availability" required min="1" placeholder="Ejemplo: 20 horas/semana">
                             
-                            <label for="cover-letter">Carta de Presentación:</label>
-                            <textarea id="cover-letter" name="cover-letter" rows="4" required placeholder="Explica por qué te gustaría este internship y cómo encajas en el puesto."></textarea>
+                            <label for="coverletter">Carta de Presentación:</label>
+                            <textarea id="coverletter" name="coverletter" rows="4" required placeholder="Explica por qué te gustaría este internship y cómo encajas en el puesto."></textarea>
                             
                             <label for="resume">Adjuntar CV (opcional):</label>
                             <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx">
                             <input type="hidden" id="jobTitle" name="jobTitle" value="UI/UX Designer Intern: Mobile App">
                             <button type="submit" class="btn">Enviar</button>
                         </form>
+                        <!-- Loader -->
+                        <div id="loader" style="display: none;">
+                            <div class="overlay"></div>
+                            <p class="loader-text">Enviando Solicitud...</p>
+                        </div>
+                
+                        <!-- Mensaje de confirmación -->
+                        <div id="confirmation-message" style="display: none; text-align: center; color: green; margin-top: 20px;">
+                            ¡Tu solicitud ha sido enviada con éxito! Nos pondremos en contacto contigo pronto.
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
