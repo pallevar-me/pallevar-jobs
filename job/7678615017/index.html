@@ -31,7 +31,7 @@
       
         <!-- External CSS Files -->
         <link rel="stylesheet" href="../../css/navbar.css"> 
-        <link rel="stylesheet" href="../../css/modal.css"> 
+        <link rel="stylesheet" href="../../css/modal2.css"> 
         <link rel="stylesheet" href="../../css/vacante.css">
         <link rel="stylesheet" href="../../css/footer.css">
       
@@ -183,33 +183,34 @@
                 <div id="apply-modal" class="modal">
                     <div class="modal-content">
                         <span class="close-btn" id="close-modal">&times;</span>
-                        <h2>Aplica para la vacante</h2>
+                        
+                        <h2><img src="../../img/icono2.png" width="50" height="50" style="position:relative; top:12px;"> Aplica para la vacante</h2>
                         <form id="apply-form">
-                            <label for="first-name">Nombre:</label>
-                            <input type="text" id="firstName" name="firstName" required placeholder="Ingresa tu nombre">
+                           <!-- <label for="first-name">Nombre:</label>-->
+                            <input type="text" id="firstName" name="firstName" required placeholder="Nombre">
                 
-                            <label for="last-name">Apellido:</label>
-                            <input type="text" id="lastName" name="lastName" required placeholder="Ingresa tu apellido">
+                            <!--<label for="last-name">Apellido:</label>-->
+                            <input type="text" id="lastName" name="lastName" required placeholder="Apellido">
                 
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
+                            <!--<label for="email">Email:</label>-->
+                            <input type="email" id="email" name="email" required placeholder="Correo electrónico">
                 
-                            <label for="phone">Teléfono (opcional):</label>
-                            <input type="tel" id="phone" name="phone" maxlength="10" placeholder="Ingresa tu número telefónico">
+                            <!--<label for="phone">Teléfono (opcional):</label>-->
+                            <input type="tel" id="phone" name="phone" maxlength="10" placeholder="Número telefónico (opcional)">
                 
-                            <label for="university">Universidad o Institución Educativa:</label>
-                            <input type="text" id="university" name="university" required placeholder="¿Dónde estudias?">
+                            <!--<label for="university">Universidad o Institución Educativa:</label>-->
+                            <input type="text" id="university" name="university" required placeholder="Universidad o Institución Educativa">
                 
-                            <label for="major">Carrera o Especialidad:</label>
-                            <input type="text" id="major" name="major" required placeholder="Tu carrera o especialidad">
+                            <!--<label for="major">Carrera o Especialidad:</label>-->
+                            <input type="text" id="major" name="major" required placeholder="Carrera o Especialidad">
                 
-                            <label for="availability">Disponibilidad (en horas por semana):</label>
-                            <input type="number" id="availability" name="availability" required min="1" placeholder="Ejemplo: 20 horas/semana">
+                            <!--<label for="availability">Disponibilidad (en horas por semana):</label>-->
+                            <input type="number" id="availability" name="availability" required min="1" placeholder="Disponibilidad (Ejemplo: 20 horas/semana)">
                 
-                            <label for="coverletter">Carta de Presentación:</label>
+                            <!----><label for="coverletter">Carta de Presentación</label>
                             <textarea id="coverletter" name="coverletter" rows="4" required placeholder="Explica por qué te gustaría este internship y cómo encajas en el puesto."></textarea>
                 
-                            <label for="resume">Adjuntar CV (opcional):</label>
+                            <label for="resume">Adjuntar CV (opcional)</label>
                             <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx">
                 
                             <input type="hidden" id="jobTitle" name="jobTitle" value="Technical Content Writer, Internship">
