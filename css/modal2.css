@@ -60,11 +60,12 @@ input[type="email"],
 input[type="tel"],
 input[type="file"],
 input[type="url"],
+input[type="number"],
 textarea {
     padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid #000000;
     width: 95.5%;
     box-sizing: border-box; /* Asegura que el padding no se agregue al tamaño total */
 }
