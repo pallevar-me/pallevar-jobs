@@ -27,10 +27,13 @@
 }
 
 /* Estilos para el contenido de la sección */
+.hero-content{
+    margin-top: 50px;
+}
 .hero-content h1 {
     font-size: 40px;
     color: #1c2434;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .hero-content p {
