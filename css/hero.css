@@ -107,6 +107,7 @@ p{
         max-width: 100%;
         padding: 10px;
         margin-bottom: 20px;
+        margin-top: 5px;
     }
 
     .button-group {
@@ -143,6 +144,11 @@ p{
 
     .hero-content p {
         font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .hero-image {
+        margin-top: 1px;
     }
 
     .btn {
