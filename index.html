@@ -83,6 +83,7 @@
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/jobs.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/accordion.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PCX60448GV"></script>
     <script>
@@ -166,10 +167,14 @@
 
     <div class="section">
         <div class="container">
-            <div class="header">
-                <h2>Engineering</h2>
-                <div class="badge">8 Openings</div>
-              </div>
+          <div class="accordion"> <!---->
+             <div class="accordion-header" id="engineering-header">
+             <!--<button class="accordion-btn"> -->
+                <h2 class="header">Engineering</h2>
+                <div class="badge">See Openings (8)</div>
+                 </div>
+            <!-- </button>  -->
+            <div class="accordion-content" id="engineering-content">
               <hr>
               <ul class="job-list">
                 <li class="job-item">
@@ -228,11 +233,12 @@
                 </li>
               </ul>        
               -->
-              
-            <div class="header">
+              </div> <!---->
+            <div class="accordion-header" id="administration-header">
                 <h2>Administration</h2>
-                <div class="badge">2 Openings</div>
+                <div class="badge">See Openings (2)</div>
               </div>
+              <div class="accordion-content" id="administration-content">
               <hr>
               <ul class="job-list">
 
@@ -251,26 +257,28 @@
                   <div class="location">Dallas, TX</div>
                 </li>
                 -->
-              </ul>
+              </ul></div>
             
           
             
-              <div class="header">
+              <div class="accordion-header" id="success-header">
                 <h2>Sales & Customer Success</h2>
-                <div class="badge">1 Openings</div>
+                <div class="badge">See Openings (1)</div>
               </div>
+              <div class="accordion-content" id="success-content">
               <hr>
               <ul class="job-list">
                 <li class="job-item">
                     <a href="job/7678615005/"> Account Manager</a>
                     <div class="location">Remote, Tijuana</div>
                   </li>
-              </ul>
+              </ul></div>
 
-              <div class="header">
+              <div class="accordion-header" id="marketing-header">
                 <h2>Marketing</h2>
-                <div class="badge">2 Openings</div>
+                <div class="badge">See Openings (2)</div>
               </div>
+              <div class="accordion-content" id="marketing-content">
               <hr>
               <ul class="job-list">
                 <li class="job-item">
@@ -281,7 +289,7 @@
                   <a href="job/7678615007/">Community Manager</a>
                   <div class="location">Remote - Mexico</div>
                 </li>
-              </ul>
+              </ul></div>
               <!--
               <h4>Work happier</h4>
               <p class="description">Build amazing things with autonomy, self-direction, and a healthy work-life balance. We offer flexible work schedules for all of our employees and unlimited PTO. We also believe that if a job allows for it, you should work wherever you’re happiest.</p>
@@ -291,10 +299,11 @@
          
               <hr>
                 -->
-                <div class="header">
+                <div class="accordion-header" id="internships-header">
                   <h2>Internships</h2>
-                  <div class="badge">6 Openings</div>
+                  <div class="badge">See Openings (8)</div>
                 </div>
+                <div class="accordion-content" id="internships-content">
                 <hr>
                 <ul class="job-list">
                   <li class="job-item">
@@ -333,6 +342,8 @@
                     <div class="location">Remote - Mexico</div>
                   </li>
 
+                </div></div>
+
                   <!--
                     <a href="/">Graphic Designer</a>
                     <div class="location">Remote - Mexico</div>
@@ -357,7 +368,7 @@
                 </p>
                 </div>
               </div>
-             
+          </div><!---->
         </div>
       </div>
       
@@ -415,6 +426,7 @@
     </main>
 
     <script src="js/app.js"></script>
+    <script src="js/accordion.js"></script>
     <script>
          
         document.getElementById('login-dropdown').addEventListener('click', function() {

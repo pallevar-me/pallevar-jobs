@@ -1,0 +1,30 @@
+.accordion-content {
+    display: none;
+        justify-content: space-between;
+        align-items: center;
+      
+}
+
+.accordion-content.active {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.accordion-header {
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.badge {
+    background-color: #e0f7fa;
+    color: #00796b;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
