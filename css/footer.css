@@ -18,11 +18,12 @@
 .footer-logo {
     flex: 1;
     min-width: 150px;
+   padding-right: 50px;
 }
 
 .footer-logo img {
     width: 225px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 /* Estilos de columnas */

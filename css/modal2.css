@@ -48,6 +48,10 @@ body.modal-open {
     z-index: 1; /* Asegura que quede debajo del loader */
 }
 
+.star {
+    font-size: 15px;
+}
+
 .modal-message {
     background-color: #fff;
     padding: 20px;

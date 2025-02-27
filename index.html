@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://jobs.espallevar.com/img/icono2.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://jobs.espallevar.com/img/icono2.png">
     <link rel="manifest" href="https://jobs.espallevar.com/img/pallevar.jpeg">
-    <meta name="theme-color" content="#1c2434">
+    <meta name="theme-color" content="#1c2434"> 
   
     <!-- Open Graph para redes sociales -->
     <meta property="og:title" content="Únete al equipo de Pallevar | Empleos y Oportunidades">
@@ -171,12 +171,12 @@
              <div class="accordion-header" id="engineering-header">
              <!--<button class="accordion-btn"> -->
                 <h2 class="header">Engineering</h2>
-                <div class="badge">See Openings (8)</div>
+                <div class="badge">See Openings <span id="engineering-openings"></span></div>
                  </div>
             <!-- </button>  -->
             <div class="accordion-content" id="engineering-content">
               <hr>
-              <ul class="job-list">
+              <ul class="job-list" id="engineering-list">
                 <li class="job-item">
                     <a href="job/7678615006/">Engineering Manager</a>
                     <div class="location">Remote - Mexico</div>
@@ -190,14 +190,15 @@
                     <a href="job/7678615004/">Senior Software Engineer, Payments</a>
                     <div class="location">Remote - Mexico</div>
                   </li>
-                <li class="job-item">
+               <li class="job-item">
                     <a href="job/7678615000/">Senior Software Engineer</a>
                     <div class="location">Remote - Mexico</div>
                   </li>
-                     <li class="job-item">
+                  <!-- Jobs that dont exist yet-->
+                  <!--  <li class="job-item">
                     <a href="job/7678615008/">iOS Software Engineer</a>
                     <div class="location">Remote - Mexico</div>
-                  </li>
+                  </li> 
                 <li class="job-item">
                     <a href="job/7678615009/">Android Software Engineer</a>
                     <div class="location">Remote - Mexico</div>
@@ -205,7 +206,7 @@
                   <li class="job-item">
                     <a href="job/7678615010/">User Interface Engineer</a>
                     <div class="location">Remote - Mexico</div>
-                  </li>  
+                  </li>  -->
                 <li class="job-item">
                     <a href="job/7678615001/">UX/UI Designer</a>
                     <div class="location">Remote - Mexico</div>
@@ -236,11 +237,11 @@
               </div> <!---->
             <div class="accordion-header" id="administration-header">
                 <h2>Administration</h2>
-                <div class="badge">See Openings (2)</div>
+                <div class="badge">See Openings <span id="administration-openings"></span></div>
               </div>
               <div class="accordion-content" id="administration-content">
               <hr>
-              <ul class="job-list">
+              <ul class="job-list" id="administration-list">
 
                 <li class="job-item">
                   <a href="#">Accounting Manager</a>
@@ -263,11 +264,11 @@
             
               <div class="accordion-header" id="success-header">
                 <h2>Sales & Customer Success</h2>
-                <div class="badge">See Openings (1)</div>
+                <div class="badge">See Openings <span id="success-openings"></span></div>
               </div>
               <div class="accordion-content" id="success-content">
               <hr>
-              <ul class="job-list">
+              <ul class="job-list" id="success-list">
                 <li class="job-item">
                     <a href="job/7678615005/"> Account Manager</a>
                     <div class="location">Remote, Tijuana</div>
@@ -276,20 +277,22 @@
 
               <div class="accordion-header" id="marketing-header">
                 <h2>Marketing</h2>
-                <div class="badge">See Openings (2)</div>
+                <div class="badge">See Openings <span id="marketing-openings"></span></div>
               </div>
               <div class="accordion-content" id="marketing-content">
               <hr>
-              <ul class="job-list">
+              <ul class="job-list" id="marketing-list">
                 <li class="job-item">
                   <a href="job/7678615003/">Marketing Manager</a>
                   <div class="location">Remote - Mexico</div>
                 </li>
+                <!--
                 <li class="job-item">
-                  <a href="job/7678615007/">Community Manager</a>
+                  <a href="job/7678615002/">Community Manager</a>
                   <div class="location">Remote - Mexico</div>
-                </li>
-              </ul></div>
+                </li>-->
+              </ul>
+            </div>
               <!--
               <h4>Work happier</h4>
               <p class="description">Build amazing things with autonomy, self-direction, and a healthy work-life balance. We offer flexible work schedules for all of our employees and unlimited PTO. We also believe that if a job allows for it, you should work wherever you’re happiest.</p>
@@ -301,11 +304,11 @@
                 -->
                 <div class="accordion-header" id="internships-header">
                   <h2>Internships</h2>
-                  <div class="badge">See Openings (8)</div>
+                  <div class="badge">See Openings <span id="internships-openings"></span></div>
                 </div>
                 <div class="accordion-content" id="internships-content">
                 <hr>
-                <ul class="job-list">
+                <ul class="job-list" id="internships-list">
                   <li class="job-item">
                     <a href="/job/7678615012">UX/UI Designer Intern: Design System</a>
                     <div class="location">Remote - Mexico</div>
