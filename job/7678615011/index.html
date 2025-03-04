@@ -37,8 +37,13 @@
         <!-- Accessibility Meta Tags -->
         <meta name="robots" content="index, follow">
         <meta name="theme-color" content="#1c2434">
+
+        <!-- Mobile Friendly -->
+        <meta name="apple-mobile-web-app-title" content="Pallevar Jobs">
+        <meta name="mobile-web-app-capable" content="yes">
       
         <!-- Fonts -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -60,8 +65,13 @@
         
         <nav class="c360-nav">
             <div class="c360-nav__header">
+                <div class="burger-menu" id="burger-menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
                 <div class="logo">
-                    <img src="../../img/pallevar-logo-2.webp" alt="Panel Administrativo">
+                    <img src="../../img/pallevar-logo-2.PNG" alt="Panel Administrativo">
                 </div>
                 <ul class="nav-links-1">
                     <li><a href="#home">Inicio</a></li>
@@ -69,10 +79,34 @@
                     <li><a href="#services">Servicios</a></li>
                     <li><a href="#precios">Precios</a></li>
                     <li><a href="#contact">Contacto</a></li>
+                    <li> 
+                        <button class="dropdown-button" id="login-dropdown">Iniciar sesión</button>
+                        <div class="dropdown">
+                            <a href="https://mimenu.pallevar.me/">Panel</a>
+                            <a href="https://kitchen.pallevar.me/">Comanda</a>
+                        </div>
+                    </li>
                 </ul>
+
+                <div class="dropdown2">
+
+                </div>
+                <button class="dropdown-button2" id="dropdownButton2">Empezar gratis</button>
             </div>
         </nav>
     </div>
+
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Acerca de</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#precios">Precios</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <button class="dropdown-button">Empezar gratis</button>
+        </ul>
+    </div>
+
 
     <div class="container">
         <div class="row">
@@ -216,9 +250,10 @@
                       <div class="footer-column">
                           <h4>Legales</h4>
                           <ul class="legal-links">
-                              <li><a href="#privacy">Política de Privacidad</a></li>
-                              <li><a href="#terms">Términos y Condiciones</a></li>
-                              <li><a href="#cookies">Política de Cookies</a></li>
+                            <li><a href="https://espallevar.com/privacy">Política de Privacidad</a></li>
+                            <li><a href="https://espallevar.com/terms">Términos y Condiciones</a></li>
+                            <li><a href="https://espallevar.com/cookiesPolicy">Política de Cookies</a></li>
+                            <li><a href="https://espallevar.com/legal">Aviso legal</a></li>
                           </ul>
                       </div>
           
@@ -226,9 +261,10 @@
                       <div class="footer-column">
                           <h4>Explora</h4>
                           <ul class="explore-links">
-                              <li><a href="https://pallevar.me/">Pallevar</a></li>
-                              <li><a href="https://jobs.pallevar.me/">Jobs</a></li>
-                              <li><a href="htts://docs.pallevar.me/">Docs</a></li>
+                            <li><a href="https://espallevar.com/privacy">Política de Privacidad</a></li>
+                            <li><a href="https://espallevar.com/terms">Términos y Condiciones</a></li>
+                            <li><a href="https://espallevar.com/cookiesPolicy">Política de Cookies</a></li>
+                            <li><a href="https://espallevar.com/legal">Aviso legal</a></li>
                           </ul>
                       </div>
                   </div>
@@ -247,7 +283,8 @@
                    
               document.getElementById('login-dropdown').addEventListener('click', function() {
                   const dropdown = document.querySelector('.dropdown');
-                  dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                  window.open('https://admin.espallevar.com/');
+                  //dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
               });
           
               // Cerrar el dropdown si se hace clic fuera de él
@@ -263,7 +300,8 @@
               const dropdownContent = document.getElementById('dropdownContent2');
           
               dropdownButton.addEventListener('click', () => {
-                  dropdownContent.classList.toggle('show');
+                window.open('https://admin.espallevar.com/signup');
+                  //dropdownContent.classList.toggle('show');
               });
           
               // Cierra el dropdown si se hace clic fuera de él

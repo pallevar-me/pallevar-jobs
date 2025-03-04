@@ -40,6 +40,7 @@
         <meta name="theme-color" content="#1c2434">
       
         <!-- Fonts -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -83,13 +84,9 @@
                 </ul>
 
                 <div class="dropdown2">
-                    <button class="dropdown-button2" id="dropdownButton2">Iniciar sesión</button>
-                    <div class="dropdown-content2" id="dropdownContent2">
-                        <a href="https://mimenu.pallevar.me/">Panel</a>
-                        <a href="https://kitchen.pallevar.me/">Comanda</a>
-                    </div>
+                 
                 </div>
-                <button class="dropdown-button2 trial">Empezar gratis</button>
+                <button class="dropdown-button2" id="dropdownButton2">Empezar gratis</button>
             </div>
         </nav>
     </div>
@@ -257,9 +254,10 @@
                 <div class="footer-column">
                     <h4>Legales</h4>
                     <ul class="legal-links">
-                        <li><a href="#privacy">Política de Privacidad</a></li>
-                        <li><a href="#terms">Términos y Condiciones</a></li>
-                        <li><a href="#cookies">Política de Cookies</a></li>
+                        <li><a href="https://espallevar.com/privacy">Política de Privacidad</a></li>
+                        <li><a href="https://espallevar.com/terms">Términos y Condiciones</a></li>
+                        <li><a href="https://espallevar.com/cookiesPolicy">Política de Cookies</a></li>
+                        <li><a href="https://espallevar.com/legal">Aviso legal</a></li>
                     </ul>
                 </div>
     
@@ -267,9 +265,10 @@
                 <div class="footer-column">
                     <h4>Explora</h4>
                     <ul class="explore-links">
-                        <li><a href="https://pallevar.me/">Pallevar</a></li>
-                        <li><a href="https://jobs.pallevar.me/">Jobs</a></li>
-                        <li><a href="htts://docs.pallevar.me/">Docs</a></li>
+                        <li><a href="https://docs.espallevar.com/" target="_blanks">Documentacion</a></li>
+                        <li><a href="https://jobs.espallevar.com/" target="_blanks">Trabajo</a></li>
+                        <li><a href="https://lacomanda.espallevar.com/" target="_blanks">Comanda</a></li>
+                        <li><a href="https://admin.espallevar.com/" target="_blanks">Panel administrativo</a></li>
                     </ul>
                 </div>
             </div>
@@ -288,7 +287,8 @@
          
     document.getElementById('login-dropdown').addEventListener('click', function() {
         const dropdown = document.querySelector('.dropdown');
-        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        window.open('https://admin.espallevar.com/');
+        //dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
     });
 
     // Cerrar el dropdown si se hace clic fuera de él
@@ -304,7 +304,8 @@
     const dropdownContent = document.getElementById('dropdownContent2');
 
     dropdownButton.addEventListener('click', () => {
-        dropdownContent.classList.toggle('show');
+        window.open('https://admin.espallevar.com/signup');
+        //dropdownContent.classList.toggle('show');
     });
 
     // Cierra el dropdown si se hace clic fuera de él
