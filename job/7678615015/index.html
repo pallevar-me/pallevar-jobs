@@ -70,34 +70,34 @@
                     <img src="../../img/pallevar-logo-2.webp" alt="Panel Administrativo">
                 </div>
                 <ul class="nav-links-1">
-                    <li><a href="https://pallevar.me/">Inicio</a></li>
-                    <li><a href="https://pallevar.me/#services">Servicios</a></li>
-                    <li><a href="https://pallevar.me/#precios">Precios</a></li>
-                    <li><a href="https://pallevar.me/#contact">Contacto</a></li>
+                    <li><a href="https://espallevar.com/#home">Inicio</a></li>
+                    <li><a href="https://espallevar.com/#services">Servicios</a></li>
+                    <li><a href="https://espallevar.com/#precios">Precios</a></li>
+                    <li><a href="https://espallevar.com/#contact">Contacto</a></li>
                     <li> 
                         <button class="dropdown-button" id="login-dropdown">Iniciar sesión</button>
                         <div class="dropdown">
-                            <a href="https://mimenu.pallevar.me/">Panel</a>
-                            <a href="https://kitchen.pallevar.me/">Comanda</a>
+                            <a href="https://admin.espallevar.com/">Panel</a>
+                            <a href="https://admin.espallevar.com/signup">Comanda</a>
                         </div>
                     </li>
                 </ul>
 
                 <div class="dropdown2">
- 
+                    <button class="dropdown-button2"  id="dropdownButton2">Iniciar sesión</button>
                 </div>
-                <button class="dropdown-button2" id="dropdownButton2">Empezar gratis</button>
+                <button class="dropdown-button2 trial" id="free-btn">Empezar gratis</button>
             </div>
         </nav>
     </div>
 
     <div class="sidebar" id="sidebar">
         <ul>
-            <li><a href="https://pallevar.me/">Inicio</a></li>
-            <li><a href="https://pallevar.me/#services">Servicios</a></li>
-            <li><a href="https://pallevar.me/#precios">Precios</a></li>
-            <li><a href="https://pallevar.me/#contact">Contacto</a></li>
-            <button class="dropdown-button">Empezar gratis</button>
+            <li><a href="https://espallevar.com/#home">Inicio</a></li>
+            <li><a href="https://espallevar.com/#services">Servicios</a></li>
+            <li><a href="https://espallevar.com/#precios">Precios</a></li>
+            <li><a href="https://espallevar.com/#contact">Contacto</a></li>
+            <button class="dropdown-button" id="free-btn-side">Empezar gratis</button>
         </ul>
     </div>
 
@@ -272,37 +272,51 @@
   <script src="../../js/apply.js"></script>
   <script>
          
-    document.getElementById('login-dropdown').addEventListener('click', function() {
-        const dropdown = document.querySelector('.dropdown');
-        window.open('https://admin.espallevar.com/');
-        //dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-    });
+         document.getElementById('login-dropdown').addEventListener('click', function() {
+            const dropdown = document.querySelector('.dropdown');
+            window.open('https://admin.espallevar.com/');
+            //dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        });
 
-    // Cerrar el dropdown si se hace clic fuera de él
-    document.addEventListener('click', function(event) {
-        const dropdown = document.querySelector('.dropdown');
-        const button = document.getElementById('login-dropdown');
-        if (!button.contains(event.target) && !dropdown.contains(event.target)) {
-            dropdown.style.display = 'none';
-        }
-    });
+        // Cerrar el dropdown si se hace clic fuera de él
+        /*document.addEventListener('click', function(event) {
+            const dropdown = document.querySelector('.dropdown');
+            const button = document.getElementById('login-dropdown');
+            if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.style.display = 'none';
+            }
+        }); */
 
-    const dropdownButton = document.getElementById('dropdownButton2');
-    const dropdownContent = document.getElementById('dropdownContent2');
+        const dropdownButton = document.getElementById('dropdownButton2');
+        const dropdownContent = document.getElementById('dropdownContent2');
 
-    dropdownButton.addEventListener('click', () => {
-        window.open('https://admin.espallevar.com/signup');
-        //dropdownContent.classList.toggle('show');
-    });
+        dropdownButton.addEventListener('click', () => {
+          window.open('https://admin.espallevar.com/');
+           //dropdownContent.classList.toggle('show');
+        });
 
-    // Cierra el dropdown si se hace clic fuera de él
-    window.addEventListener('click', (event) => {
-        if (!event.target.matches('.dropdown-button2')) {
-            if (dropdownContent.classList.contains('show')) {
-                dropdownContent.classList.remove('show');
+        // Cierra el dropdown si se hace clic fuera de él
+       /* window.addEventListener('click', (event) => {
+            if (!event.target.matches('.dropdown-button2')) {
+                if (dropdownContent.classList.contains('show')) {
+                    dropdownContent.classList.remove('show');
+                }
             }
         }
-    });
+      
+      
+      );*/
+
+      const empezarGratis = document.getElementById('free-btn');
+      const empezarSide = document.getElementById('free-btn-side');
+
+      empezarGratis.addEventListener('click', () => {
+          window.open('https://admin.espallevar.com/signup');
+        });
+
+        empezarSide.addEventListener('click', () => {
+          window.open('https://admin.espallevar.com/signup');
+        });
 </script>
 </body>
 </html>
